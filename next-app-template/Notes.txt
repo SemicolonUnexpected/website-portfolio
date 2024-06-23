@@ -1,0 +1,4 @@
+The app/layout.tsx file contains the navbar
+The navbar is a custom wrapper for the nextui navbar from the components/navbar.tsx
+The navbar uses icons that are defined in components/icons.tsx with paths
+This should be avoided as it is very complex and images should be created separately and then put in the public/assets folder
