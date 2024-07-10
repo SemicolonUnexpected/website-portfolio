@@ -1,3 +1,5 @@
+"use client";
+
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -7,9 +9,12 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
+import CursorBlinker from "@/components/cursor-blinker";
+
 export default function Home() {
   return (
   <>
+    <CursorBlinker/>
   </>
   );
 }
