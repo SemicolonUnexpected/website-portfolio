@@ -26,7 +26,7 @@ export default function CursorBlinker() {
                 ease: "linear",
                 times: [0, 0.5, 0.5, 1]
             }}
-            className="inline-block h-6 w-3 bg-blue-600"
+            className="inline-block translate-y-1 h-6 w-3 bg-blue-600"
         />
     );
 }
