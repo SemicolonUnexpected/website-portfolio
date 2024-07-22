@@ -10,12 +10,12 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 
 import CursorBlinker from "@/components/cursor-blinker";
-import TypingAnimation from "@/components/terminal-typing-animation";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <div>
-        <TypingAnimation/>
+        <Hero justify="center"/>
     </div>
   );
 }

@@ -1,15 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion"; 
-import TypingAnimation from "@/components/TypingAnimation";
+import TypingAnimation from "@/components/terminal-typing-animation";
 
 export default function Hero() {
     return(
-        <div>
+        <div className="max-w-screen-md flex self-center mx-auto">
+            <div className="basis-1/2">
             <TypingAnimation/>
-            <motion.span>
-                Semicolon Unexpected
-            </motion.span>
+            </div>
+
+            <div>
+                Hello, I am...
+            </div>
         </div>
     );
 }
