@@ -1,53 +1,53 @@
-# The Plan...
+# Next.js & NextUI Template
 
-Make a very simple website, the code can suck, it already does: it's in typescript
+This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
 
+[Try it on CodeSandbox](https://githubbox.com/nextui-org/next-app-template)
 
-## MOSCOWS
+## Technologies Used
 
-### Must have...
+- [Next.js 14](https://nextjs.org/docs/getting-started)
+- [NextUI v2](https://nextui.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Variants](https://tailwind-variants.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [next-themes](https://github.com/pacocoursey/next-themes)
 
-- Mobile compatibility
-- Contact page
-- Projects list
-- Bio
-- Dark mode
-- Ability to add new projects easily
+## How to Use
 
-### Should have
+### Use the template with create-next-app
 
-- Search function
-- Projects ordered by date
-- Nice url
-- Images in projects list
+To create a new project based on this template using `create-next-app`, run the following command:
 
-### Could have
+```bash
+npx create-next-app -e https://github.com/nextui-org/next-app-template
+```
 
-- Light and dark mode
-- Nice animations
+### Install dependencies
 
-### Won't have
+You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 
-- More than 4 main pages
+```bash
+npm install
+```
 
-## Structure
+### Run the development server
 
-- Navbar
-    - Compatible with small screens
+```bash
+npm run dev
+```
 
-- Home page 
-    - contains bio
+### Setup pnpm (optional)
 
-- Blog/Projects page 
-    - contains any projects in a list ordered by date with a search function
+If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
 
-- Contact page
-    - Contains email address/contact box
+```bash
+public-hoist-pattern[]=*@nextui-org/*
+```
 
-## Limitations and strategy
+After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
-- Idrk web dev
-- For theming it is better to have the 'icons' in typescript to allow easy colour manipulation
-- Theming done through tailwind
-- Conditional layout
-- Static images in /public/assets
+## License
+
+Licensed under the [MIT license](https://github.com/nextui-org/next-app-template/blob/main/LICENSE).
