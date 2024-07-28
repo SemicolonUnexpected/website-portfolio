@@ -4,8 +4,11 @@ import Hero from "@/components/hero";
 
 export default function Home() {
   return (
-    <div>
-            
-    </div>
+    <>
+      <div className="grid-cols-2 grid-rows-3">
+        <div>Hello</div>
+        <div>Hello</div>
+      </div>
+    </>
   );
 }
