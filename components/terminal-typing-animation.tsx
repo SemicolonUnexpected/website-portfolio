@@ -3,6 +3,8 @@
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 import CursorBlinker from "@/components/cursor-blinker";
+
+import clsx from "clsx";
 import { fontMono } from "@/config/fonts";
 
 export default function TypingAnimation() {
@@ -24,7 +26,12 @@ export default function TypingAnimation() {
 
     return (
         <div>
-            <motion.span className="text-2xl text-blue-600 font-sans">{displayText}</motion.span>
+            <motion.span className={clsx(
+                "text-4xl text-blue-600 font-sans",
+                fontMono.variable
+            )}>
+                {displayText}
+            </motion.span>
             <CursorBlinker/>
         </div>
     );

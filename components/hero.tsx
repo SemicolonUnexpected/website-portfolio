@@ -7,7 +7,7 @@ export default function Hero() {
     return(
         <div className="max-w-screen-md flex self-center mx-auto">
             <div className="basis-1/2">
-            <TypingAnimation/>
+                <TypingAnimation/>
             </div>
 
             <div>
