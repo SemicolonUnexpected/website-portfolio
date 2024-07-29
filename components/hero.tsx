@@ -9,10 +9,6 @@ export default function Hero() {
             <div className="basis-1/2">
                 <TypingAnimation/>
             </div>
-
-            <div>
-                Hello, I am...
-            </div>
         </div>
     );
 }

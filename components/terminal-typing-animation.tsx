@@ -25,14 +25,20 @@ export default function TypingAnimation() {
     }, []);
 
     return (
-        <div>
-            <motion.span className={clsx(
-                "text-4xl text-blue-600 font-sans",
-                fontMono.variable
-            )}>
-                {displayText}
-            </motion.span>
-            <CursorBlinker/>
-        </div>
+    <div>
+      <div>
+        <motion.span className={clsx(
+          "text-4xl text-blue-600 font-sans",
+          fontMono.variable
+        )}>
+          {displayText}
+        </motion.span>
+        <CursorBlinker/>
+      </div>
+
+      <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, repeat: Infinity }}>
+        Hi there
+      </motion.div>
+    </div>
     );
 }
