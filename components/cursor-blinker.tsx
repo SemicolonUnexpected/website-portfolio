@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function CursorBlinker() {
     return (
-        <motion.div className="cursor"
+        <motion.div
             animate={{ opacity: [1, 1, 0, 0] }}
             transition={{
                 duration: 1,
