@@ -1,4 +1,5 @@
 import Hero from "@/components/hero";
+import ProgrammingLanguages from "@/components/programming-languages";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <div>
         </div>
         <div>
+          <ProgrammingLanguages/>
         </div>
 
         <div>
