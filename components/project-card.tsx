@@ -6,13 +6,19 @@ import Image from "next/image";
 
 import * as React from "react";
 
-interface ProjectCardProps {
+interface CardProps {
   title: string;
   text: string;
   route: string;
-  imageSrc?: string;
-  alt?: string;
 }
+
+interface ImageProps {
+  imageSrc: string;
+  alt: string;
+}
+
+type ProjectCardProps = CardProps | ( CardProps & ImageProps )
+
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, text, route, imageSrc="", alt="" }) => {
   const router = useRouter();
@@ -21,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, text, route, imageSrc=
     <Card className="w-full" isPressable onPress={() => router.push(route)}>
       <CardBody>
         <span>
-          {imageSrc != "" && alt != "" &&
+          {imageSrc != "" &&
             <Image src={imageSrc} alt={alt}/>
           }
         </span>
