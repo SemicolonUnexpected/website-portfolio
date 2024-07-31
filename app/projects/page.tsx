@@ -1,11 +1,12 @@
 import { title } from "@/components/primitives"
-import { Typescript, CSharp, Arch } from "@/components/icons";
+import ProjectCard from "@/components/project-card";
 
 export default function ProjectsPage() {
   return (
     <div>
       <h1 className={title()}>Projects</h1>
 
+      <ProjectCard/>
       
     </div>
   );

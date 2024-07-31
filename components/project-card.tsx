@@ -1,4 +1,3 @@
-/*
 import { Card, CardBody } from "@nextui-org/card";
 
 export default function ProjectCard() {
@@ -10,4 +9,3 @@ export default function ProjectCard() {
     </Card>
   );
 }
-*/
