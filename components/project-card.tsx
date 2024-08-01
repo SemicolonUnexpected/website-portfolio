@@ -2,7 +2,7 @@
 
 import { Card, CardBody } from "@nextui-org/card";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+import { Image } from "@nextui-org/image";
 
 import * as React from "react";
 
@@ -25,15 +25,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, text, route, imageSrc=
   return (
     <Card className="max-w-5xl h-96 w-full md:h-48" isPressable onPress={() => router.push(route)}>
       <CardBody>
-        <div className="">
-          <div className="w-24 h-24">
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="relative basis-1/2">
             {imageSrc &&
-              <Image src={imageSrc} alt={alt} layout="fill" objectFit="cover"/>
+              <Image src={imageSrc} alt={alt} width="100% md:auto" className="object-cover basis-1/2 max-h-48 md:max-h-[10.5rem]"/>
             }
           </div>
           <div className="basis-1/2">
             <h1 className="font-semibold text-xl">{title}</h1>
-            <p className="text-ellipses">{text}</p>
+            <p>{text}</p>
           </div>
         </div>
       </CardBody>
