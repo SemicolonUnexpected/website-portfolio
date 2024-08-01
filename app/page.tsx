@@ -1,4 +1,4 @@
-import Hero from "@components/hero";
+import Hero from "@/components/hero";
 import ProgrammingLanguages from "@/components/programming-languages";
 
 export default function Home() {
