@@ -5,6 +5,7 @@ export { Logo } from "./logo";
 //export { Python } from "./python";
 export { CSharp } from "./csharp";
 export { Typescript } from "./typescript";
+export { Python } from "./python";
 
 // i use arch btw
 export { Arch } from "./arch";

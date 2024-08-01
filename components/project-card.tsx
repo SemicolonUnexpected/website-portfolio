@@ -26,12 +26,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, text, route, imageSrc=
     <Card className="max-w-5xl h-96 w-full md:h-48" isPressable onPress={() => router.push(route)}>
       <CardBody>
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="relative basis-1/2">
             {imageSrc &&
+            <div className="relative basis-1/2">
               <Image src={imageSrc} alt={alt} width="100% md:auto" className="object-cover basis-1/2 max-h-48 md:max-h-[10.5rem]"/>
+            </div>
             }
-          </div>
-          <div className="basis-1/2">
+          <div className={imageSrc && "basis-1/2"}>
             <h1 className="font-semibold text-xl">{title}</h1>
             <p>{text}</p>
           </div>

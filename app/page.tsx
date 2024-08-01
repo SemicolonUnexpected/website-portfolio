@@ -9,7 +9,7 @@ export default function Home() {
           <Hero/>
         </div>
         <div className="flex items-center h-52">
-          Hi, Im Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
+          Hi, I&#39;m Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
         </div>
 
         <div>

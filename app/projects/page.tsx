@@ -17,7 +17,24 @@ export default function ProjectsPage() {
           route="/" 
           text="This is a test"
           imageSrc="/clouds.jpg"/> 
-        <ProjectCard title="Test" route="/" text="TThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long texthis is some very very very very very very long text"/> 
+        <ProjectCard 
+          title="Test" 
+          route="/" 
+          text="Test"/>
+        <ProjectCard 
+          title="Test" 
+          route="/" 
+          text="This is a test"
+          imageSrc="/placeholder.jpg"/> 
+        <ProjectCard 
+          title="Test" 
+          route="/" 
+          text="This is a test"
+          imageSrc="/clouds.jpg"/> 
+        <ProjectCard 
+          title="Test" 
+          route="/" 
+          text="Test"/>
       </div>
       
     </div>
