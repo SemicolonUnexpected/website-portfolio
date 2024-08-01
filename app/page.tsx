@@ -1,4 +1,4 @@
-import Hero from "@/components/hero";
+import Hero from "@components/hero";
 import ProgrammingLanguages from "@/components/programming-languages";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
           <Hero/>
         </div>
         <div className="flex items-center h-52">
-          Hi, I'm Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
+          Hi, Im Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
         </div>
 
         <div>

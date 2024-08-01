@@ -23,18 +23,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, text, route, imageSrc=
   const router = useRouter();
 
   return (
-    <Card className="w-64 sm:w-full h-96 md:h-48" isPressable onPress={() => router.push(route)}>
+    <Card className="w-68 md:w-full h-96 md:h-48" isPressable onPress={() => router.push(route)}>
       <CardBody>
-        <div className="flex space-x-4">
-        <span className="shrink-0">
+        <div className="flex items-center space-x-4">
+        <span className="shrink-0 grow-0">
           {imageSrc &&
             <Image src={imageSrc} alt={alt} height={168} width={250} className="shrink-0"/>
           }
         </span>
-        <span>
+        <div className="block md:inline-block">
           <h1 className="font-semibold text-xl">{title}</h1>
           <p className="text-ellipses">{text}</p>
-        </span>
+        </div>
         </div>
       </CardBody>
     </Card>

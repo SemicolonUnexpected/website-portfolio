@@ -11,7 +11,7 @@ export default function ProjectsPage() {
 
       {/* The projects */}
 
-      <div className="flex flex-col justify-center space-y-4">
+      <div className="flex flex-col justify-center items-center space-y-4">
         <ProjectCard 
           title="Test" 
           route="/" 
