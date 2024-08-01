@@ -12,11 +12,12 @@ export default function ProjectsPage() {
       {/* The projects */}
 
       <div className="flex flex-col justify-center space-y-4">
-        <ProjectCard title="Test" route="/" text="This is some very very very very very very long text"/> 
-        <ProjectCard title="Test" route="/" text="This is some very very very very very very long text"/> 
-        <ProjectCard title="Test" route="/" text="This is some very very very very very very long text"/> 
-        <ProjectCard title="Test" route="/" text="This is some very very very very very very long text"/> 
-        <ProjectCard title="Test" route="/" text="This is some very very very very very very long text" imageSrc="../public/clouds.jpg"/>
+        <ProjectCard 
+          title="Test" 
+          route="/" 
+          text="This is a test"
+          imageSrc="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"/> 
+        <ProjectCard title="Test" route="/" text="TThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long texthis is some very very very very very very long text"/> 
       </div>
       
     </div>
