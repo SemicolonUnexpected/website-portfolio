@@ -16,7 +16,7 @@ export default function ProjectsPage() {
           title="Test" 
           route="/" 
           text="This is a test"
-          imageSrc="https://nextui-docs-v2.vercel.app/images/hero-card-complete.jpeg"/> 
+          imageSrc="/clouds.jpg"/> 
         <ProjectCard title="Test" route="/" text="TThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long textThis is some very very very very very very long texthis is some very very very very very very long text"/> 
       </div>
       
