@@ -20,7 +20,9 @@ export default function ProjectsPage() {
         <ProjectCard 
           title="Test" 
           route="/" 
-          text="Test"/>
+          text="This is a test"
+          isIcon
+          imageSrc="/clouds.jpg"/> 
         <ProjectCard 
           title="Test" 
           route="/" 
