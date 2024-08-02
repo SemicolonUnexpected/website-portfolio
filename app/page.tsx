@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex h-80 items-center justify-center">
+        <div className="flex h-60 sm:h-80 items-center justify-center">
           <Hero/>
         </div>
         <div className="flex items-center">

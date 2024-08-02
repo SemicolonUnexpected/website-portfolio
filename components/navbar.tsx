@@ -30,7 +30,8 @@ export default function Navbar() {
     <NextUINavbar maxWidth="md" position="sticky"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      isBlurred={false}>
+      isBlurred={false}
+      isBordered>
       <NavbarContent className="basis-1/5" justify="start">
         <Logo/>
         <p className="font-bold text-inherit"></p>
