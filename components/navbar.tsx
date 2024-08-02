@@ -29,7 +29,8 @@ export default function Navbar() {
     return(
     <NextUINavbar maxWidth="md" position="sticky"
       isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}>
+      onMenuOpenChange={setIsMenuOpen}
+      isBlurred={false}>
       <NavbarContent className="basis-1/5" justify="start">
         <Logo/>
         <p className="font-bold text-inherit"></p>
@@ -62,6 +63,7 @@ export default function Navbar() {
               <Link
                 href={item.href}
                 size="lg"
+                color="foreground"
                 className="w-full"
                 onPress={() => setIsMenuOpen(false)}
               >
