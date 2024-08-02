@@ -4,7 +4,6 @@ import {
   NavbarContent,
   NavbarMenu,
   NavbarMenuToggle,
-  NavbarBrand,
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
@@ -53,7 +52,7 @@ export default function Navbar() {
           {siteConfig.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                href="#"
+                href={item.href}
                 size="lg"
                 className="w-full"
               >
