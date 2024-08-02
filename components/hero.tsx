@@ -62,7 +62,7 @@ function CursorBlinker() {
         ease: "linear",
         times: [0, 0.5, 0.5, 1]
       }}
-      className="inline-block translate-x-1 translate-y-1 h-[1.6rem] w-3 sm:h-8 sm:w-4 bg-blue-600"
+      className="inline-block translate-x-1 translate-y-[0.35rem] h-9 w-4 sm:h-14 sm:translate-y-2 sm:w-7 bg-blue-600"
     />
   );
 }
