@@ -1,3 +1,5 @@
+"use client"
+
 // The Nextui stuff needed
 import {
   Navbar as NextUINavbar,
@@ -18,10 +20,16 @@ import {
     Logo,
 } from "@/components/icons";
 
+import { useState } from "react";
+
 
 export default function Navbar() {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     return(
-    <NextUINavbar maxWidth="md" position="sticky">
+    <NextUINavbar maxWidth="md" position="sticky"
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent className="basis-1/5" justify="start">
         <Logo/>
         <p className="font-bold text-inherit"></p>
@@ -55,6 +63,7 @@ export default function Navbar() {
                 href={item.href}
                 size="lg"
                 className="w-full"
+                onPress={() => setIsMenuOpen(false)}
               >
                 {item.label}
               </Link>
