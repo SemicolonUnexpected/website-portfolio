@@ -13,24 +13,24 @@ export default function ProjectsPage() {
 
       <div className="flex flex-col justify-center items-center space-y-4">
         <ProjectCard 
-          title="Test" 
-          route="/" 
+          title="Project Euler" 
+          route="/projects/project-euler" 
           text="This is a test"
           imageSrc="/clouds.jpg"/> 
         <ProjectCard 
-          title="Test" 
-          route="/" 
+          title="AS Coursework" 
+          route="/projects/as-coursework" 
           text="This is a test"
           isIcon
           imageSrc="/clouds.jpg"/> 
         <ProjectCard 
-          title="Test" 
-          route="/" 
+          title="Wordscapes Bot" 
+          route="/projects/wordscapes-bot" 
           text="This is a test"
           imageSrc="/placeholder.jpg"/> 
         <ProjectCard 
-          title="Test" 
-          route="/" 
+          title="Robotics" 
+          route="/projects/robotics" 
           text="This is a test"
           imageSrc="/clouds.jpg"/> 
         <ProjectCard 
