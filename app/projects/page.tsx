@@ -21,7 +21,7 @@ export default function ProjectsPage() {
         <IconProjectCard
           title="Icon Project Card"
           route="#"
-          text="This is a test of the icon project card"
+          text="This is a test of the icon project card. This is some long text to ensure that the text wraps properly"
           IconComponent={Typescript}/>
         <ProjectCard 
           title="Wordscapes Bot" 

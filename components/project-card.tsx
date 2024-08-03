@@ -20,8 +20,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, text, route, im
           </div>
         }
         <div className={imageSrc &&"basis-1/2"}>
-          <h1 className="font-semibold text-xl">{title}</h1>
-          <p>{text}</p>
+          <h1 className="font-semibold text-2xl">{title}</h1>
+          <p className="text-lg">{text}</p>
         </div>
       </div>
     </NavigatableCard>
@@ -39,14 +39,14 @@ interface IconProjectCardProps {
 export const IconProjectCard: React.FC<IconProjectCardProps> = ({ title, text, route, IconComponent }) => {
   return (
     <NavigatableCard className="max-w-5xl h-96 w-full md:h-48" route={route}>
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col md:flex-row gap-8">
         <div className="w-full">
-          <h1 className="font-semibold text-xl">{title}</h1>
-          <p>{text}</p>
+          <h1 className="font-semibold text-2xl">{title}</h1>
+          <p className="text-lg">{text}</p>
         </div>
 
-        <div>
-          <IconComponent size={120}/>
+        <div className="p-7">
+          <IconComponent size={100} className="m-auto"/>
         </div>
 
       </div>
