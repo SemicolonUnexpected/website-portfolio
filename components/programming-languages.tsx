@@ -2,6 +2,7 @@
 
 import { CSharp, Typescript, Python } from "@/components/icons";
 import { motion } from "framer-motion";
+import { IconSvgProps } from "@/types";
 
 export default function ProgrammingLanguages() {
   return(
@@ -12,8 +13,12 @@ export default function ProgrammingLanguages() {
 }
 
 const ProgrammingLanguagesMobile = () => {
+  const currentIcon: React.ComponentType<IconSvgProps> = CSharp;
   return(
     <div>
+      <motion.div>
+
+      </motion.div>
     </div>
   );
 }

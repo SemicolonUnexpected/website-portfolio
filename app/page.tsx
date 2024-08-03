@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import ProgrammingLanguages from "@/components/programming-languages";
+import Linux from "@/components/linux";
 
 export default function Home() {
   return (
@@ -12,15 +13,18 @@ export default function Home() {
           Hi, I&#39;m Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
         </div>
 
-        <div>
+        <div className="flex items-center text-justify sm:text-center">
+          Hi, I&#39;m Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
         </div>
         <div className="m-auto">
           <ProgrammingLanguages/>
         </div>
 
         <div>
+          <Linux/>
         </div>
-        <div>
+        <div className="flex items-center text-justify sm:text-center">
+          Hi, I&#39;m Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
         </div>
       </div>
     </>
