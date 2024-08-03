@@ -41,7 +41,7 @@ interface IconProjectCardProps {
   title: string;
   text: string;
   route: string;
-  IconComponent?: React.ComponentType<IconSvgProps>;
+  IconComponent: React.ComponentType<IconSvgProps>;
 }
 
 
@@ -58,7 +58,7 @@ export const IconProjectCard: React.FC<IconProjectCardProps> = ({ title, text, r
           </div>
 
           <div>
-            <IconComponent/>
+            <IconComponent size={120}/>
           </div>
 
         </div>

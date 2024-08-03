@@ -1,5 +1,6 @@
 import { title } from "@/components/primitives"
-import ProjectCard from "@/components/project-card";
+import { ProjectCard, IconProjectCard } from "@/components/project-card";
+import { GithubIcon, Typescript } from "@/components/icons";
 
 export default function ProjectsPage() {
   return (
@@ -17,12 +18,11 @@ export default function ProjectsPage() {
           route="/projects/project-euler" 
           text="This is a test"
           imageSrc="/clouds.jpg"/> 
-        <ProjectCard 
-          title="AS Coursework" 
-          route="/projects/as-coursework" 
-          text="This is a test"
-          isIcon
-          imageSrc="/clouds.jpg"/> 
+        <IconProjectCard
+          title="Icon Project Card"
+          route="#"
+          text="This is a test of the icon project card"
+          IconComponent={Typescript}/>
         <ProjectCard 
           title="Wordscapes Bot" 
           route="/projects/wordscapes-bot" 
