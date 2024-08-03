@@ -1,5 +1,3 @@
-"use client"
-
 import { Card, CardBody } from "@nextui-org/card";
 import { useRouter } from "next/navigation";
 import { Image } from "@nextui-org/image";
