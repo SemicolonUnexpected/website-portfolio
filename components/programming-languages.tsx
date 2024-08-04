@@ -23,20 +23,18 @@ const ProgrammingLanguagesMobile = () => {
   );
 }
 
+
 const ProgrammingLanguagesDesktop = () => {
   return(
     <div className="flex gap-8 m-auto">
-      <motion.div whileHover={{ scale : 1.1 }}>
+      <motion.div whileHover={{ scale : 1.1 }} whileTap={{ scale: 1.1 }}>
         <CSharp size={90}/>
       </motion.div>
-      <motion.div whileHover={{ scale : 1.1 }}>
+      <motion.div whileHover={{ scale : 1.1 }} whileTap={{ scale: 1.1 }}>
         <Typescript size={90}/>
       </motion.div>
-      <motion.div whileHover={{ scale : 1.1 }}>
+      <motion.div whileHover={{ scale : 1.1 }} whileTap={{ scale: 1.1 }}>
         <Python size={90}/>
-      </motion.div>
-      <motion.div whileHover={{ scale : 1.1 }}>
-        <Java size={90}/>
       </motion.div>
     </div>
   );
