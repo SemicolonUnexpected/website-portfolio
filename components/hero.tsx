@@ -29,7 +29,7 @@ export default function Hero() {
     <div>
       <div ref={scope}>
         <motion.span className={clsx(
-          "text-4xl sm:text-6xl text-blue-600 font-mono",
+          "text-[2rem] sm:text-6xl text-blue-600 font-mono",
           fontMono.variable
         )}>
           {displayText}
@@ -40,7 +40,7 @@ export default function Hero() {
         </span>
 
         <motion.div className={clsx(
-          "username text-[1.7rem] sm:text-5xl font-mono",
+          "username text-[2rem] sm:text-6xl font-mono",
           fontMono.variable
         )}>
           SemicolonUnexpected
