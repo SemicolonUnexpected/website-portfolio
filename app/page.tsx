@@ -16,8 +16,8 @@ export default function Home() {
         <div className="flex h-60 sm:h-80 items-center justify-center">
           <ProgrammingLanguages/>
         </div>
-        <div className="flex items-center text-justify sm:text-center m-auto">
-          Hi, I&#39;m Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
+        <div className="flex items-center text-justify sm:text-center m-auto text-lg">
+          I am self taught in python, C# and typescript. I also have some experience with java through the First Robotics Competition and have dabbled in haskell and rust.
         </div>
 
         <div>
