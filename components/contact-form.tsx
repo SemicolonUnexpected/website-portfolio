@@ -6,8 +6,11 @@ import { Button } from "@nextui-org/button";
 import { useState } from "react";
 
 import sendEmail from "@/actions/email";
+import { revalidatePath } from "next/cache";
 
 export default function ContactForm() {
+  const validateEmail = (value: string) => value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -20,6 +23,7 @@ export default function ContactForm() {
         label="Name"
         value={name}
         onValueChange={setName}
+        isRequired
       />
 
       <Input
@@ -27,6 +31,7 @@ export default function ContactForm() {
         label="Email"
         value={email}
         onValueChange={setEmail}
+        isRequired
       />
 
       <Textarea
@@ -34,21 +39,28 @@ export default function ContactForm() {
         minRows={8}
         value={message}
         onValueChange={setMessage}
+        isRequired
       />
 
       <Button
         color="primary"
         size="lg"
         type="submit"
-        isLoading={false}
+        isLoading={loading}
         onPress={async () => {
           // Validation
+          console.log(message)
 
-          // Send message
           setLoading(true);
-          await sendEmail(name, email, message).then(() => {
-            setLoading(false);
-          });
+          // Send message
+          await sendEmail(name, email, message);
+
+          // Clear fields
+          setName("");
+          setEmail("");
+          setMessage("");
+
+          setLoading(false);
         }}
       >
         Submit
