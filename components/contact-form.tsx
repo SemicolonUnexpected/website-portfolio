@@ -15,19 +15,19 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const [nameInvalid, setNameInvalid] = useState(true);
+  const [emailInvalid, setEmailInvalid] = useState(false);
+  const [messageInvalid, setMessageInvalid] = useState(false);
+
   const [loading, setLoading] = useState(false);
 
   return(
     <>
-      <form action={(formData) => {
-        formData.get("button")
-      }}>
-        <Button type="submit" name="button">Submit</Button>
-      </form>
       <Input
         label="Name"
         value={name}
         onValueChange={setName}
+        isInvalid={nameInvalid}
         isRequired
       />
 
@@ -54,8 +54,10 @@ export default function ContactForm() {
         isLoading={loading}
         onPress={async () => {
           // Validation
+          if (name === "") {}
+          if (!validateEmail(email)) {}
           if(message === "") {
-            console.log("Message empty");
+
           }
 
           setLoading(true);
@@ -72,6 +74,9 @@ export default function ContactForm() {
       >
         Submit
       </Button>
+      <div>
+        Oops, there was an error while trying to send your email
+      </div>
     </>
   );
 }
