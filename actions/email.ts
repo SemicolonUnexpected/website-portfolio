@@ -1,34 +1,26 @@
 "use server";
 
-import * as nodemailer from "nodemailer";
+import { Resend } from "resend";
+import { EmailTemplate } from "@/components/email-template.tsx";
 
-const transporter = nodemailer.createTransport({
-  service: "Gmail",
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const sendEmail = async (name: string, email: string, message: string) => {
   console.log(name, email, message);
 
-  const mailOptions = {
-    from: "your_email@gmail.com",
-    to: "recipient@example.com",
-    subject: "Hello from Nodemailer",
-    text: "This is a test email sent using Nodemailer.",
-  };
+  try {
+    const { data, error } = await resend.emails.send({
+      from: email,
+      to: [process.env.EMAIL as string],
+      subject: "Website message",
+      react: EmailTemplate(name, email, message),
+    });
 
-  await transporter.sendMail(mailOptions, (error, info) => {
-    return {
-      error: error,
-      info: info,
-    };
-  });
+    return { data: data, error: error };
+  }
+  catch (error) {
+    return { error: error };
+  }
 };
 
 export default sendEmail;
