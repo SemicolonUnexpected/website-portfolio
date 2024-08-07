@@ -49,7 +49,7 @@ export default function ContactForm() {
         isLoading={loading}
         onPress={async () => {
           // Validation
-          console.log(message)
+          console.log("Message: " + message)
 
           setLoading(true);
           // Send message
