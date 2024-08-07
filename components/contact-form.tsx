@@ -19,6 +19,11 @@ export default function ContactForm() {
 
   return(
     <>
+      <form action={(formData) => {
+        formData.get("button")
+      }}>
+        <Button type="submit" name="button">Submit</Button>
+      </form>
       <Input
         label="Name"
         value={name}
@@ -49,7 +54,9 @@ export default function ContactForm() {
         isLoading={loading}
         onPress={async () => {
           // Validation
-          console.log("Message: " + message)
+          if(message === "") {
+            console.log("Message empty");
+          }
 
           setLoading(true);
           // Send message
