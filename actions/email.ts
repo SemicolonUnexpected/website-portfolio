@@ -1,7 +1,7 @@
 "use server";
 
 import { Resend } from "resend";
-import { EmailTemplate } from "@/components/email-template.tsx";
+import EmailTemplate from "@/components/email-template";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -10,16 +10,16 @@ const sendEmail = async (name: string, email: string, message: string) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: email,
-      to: [process.env.EMAIL as string],
+      from: "Contact Form <onboarding@resend.dev>",
+      to: ["m.gracey1409@gmail.com"],
       subject: "Website message",
-      react: EmailTemplate(name, email, message),
+      react: EmailTemplate({ name, email, message }),
     });
 
     return { data: data, error: error };
   }
   catch (error) {
-    return { error: error };
+    console.log("Error");
   }
 };
 

@@ -7,8 +7,6 @@ import { useState } from "react";
 
 import sendEmail from "@/actions/email";
 
-import nodemailer from "nodemailer";
-
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -50,7 +48,7 @@ export default function ContactForm() {
           setLoading(true);
           await sendEmail(name, email, message).then(() => {
             setLoading(false);
-          })
+          });
         }}
       >
         Submit
