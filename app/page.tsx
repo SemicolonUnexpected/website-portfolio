@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex h-60 sm:h-80 items-center justify-center">
           <Linux/>
         </div>
-        <div className="flex items-center text-justify sm:text-center m-auto">
+        <div className="flex items-center text-justify sm:text-center m-auto text-lg">
           Linux is my primary OS, but I also dual boot windows... I use Arch btw
         </div>
       </div>
