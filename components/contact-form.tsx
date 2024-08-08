@@ -52,48 +52,50 @@ export default function ContactForm() {
         isRequired
       />
 
-      <Button
-        className="mx-auto justify-center self-center"
-        color="primary"
-        size="lg"
-        type="submit"
-        isLoading={loading}
-        onPress={async () => {
-          // Validation
-          let error = false;
-          if (name === "") {
-            setNameInvalid(true);
-            error = true;
-          }
-          else setNameInvalid(false);
-          if (!validateEmail(email)) {
-            setEmailInvalid(true);
-            error = true;
-          }
-          else setEmailInvalid(false);
-          if(message === "") {
-            setMessageInvalid(true);
-            error = true;
-          }
-          else setMessageInvalid(false);
+      <div className="flex">
+        <Button
+          className="mx-auto justify-center self-center"
+          color="primary"
+          size="lg"
+          type="submit"
+          isLoading={loading}
+          onPress={async () => {
+            // Validation
+            let error = false;
+            if (name === "") {
+              setNameInvalid(true);
+              error = true;
+            }
+            else setNameInvalid(false);
+            if (!validateEmail(email)) {
+              setEmailInvalid(true);
+              error = true;
+            }
+            else setEmailInvalid(false);
+            if(message === "") {
+              setMessageInvalid(true);
+              error = true;
+            }
+            else setMessageInvalid(false);
 
-          if (error) return;
+            if (error) return;
 
-          setLoading(true);
+            setLoading(true);
 
-          // Send message
-          await sendEmail(name, email, message);
+            // Send message
+            await sendEmail(name, email, message);
 
-          // Clear fields
-          setName("");
-          setEmail("");
-          setMessage("");
+            // Clear fields
+            setName("");
+            setEmail("");
+            setMessage("");
 
-          setLoading(false);
-        }}
-      >
-        Submit
-      </Button>
+            setLoading(false);
+          }}
+        >
+          Submit
+        </Button>
+      </div>
     </div>
   );
 }
