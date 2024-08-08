@@ -24,7 +24,7 @@ export default function Home() {
           <Linux/>
         </div>
         <div className="flex items-center text-justify sm:text-center m-auto">
-          Hi, I&#39;m Matthew aka. github user SemicolonUnexpected. I am enthusiastic for computer science and mathematics problems
+          Linux is my primary OS, but I also dual boot windows... I use Arch btw
         </div>
       </div>
     </>
